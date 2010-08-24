@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference
+		android:key="save_sent_sms"
+		android:title="@string/preferences_save_sent"
+		android:summary="@string/preferences_save_sent_summary"
+		android:contentDescription="@string/preferences_save_sent_description" />
+
+	<EditTextPreference
+		android:key="default_calling_code"
+		android:defaultValue="33"
+		android:showDefault="true"
+		android:title="@string/preferences_default_calling_code"
+		android:summary="@string/preferences_default_calling_code_summary" />
+
+	<ListPreference
+		android:id="@+id/default_from_number"
+		android:key="default_from_number"
+		android:title="@string/preferences_default_from_number"
+		android:summary="@string/preferences_default_from_number_summary" />
+
+	<CheckBoxPreference
+		android:key="ask_from_number"
+		android:title="@string/preferences_ask_from_number"
+		android:summary="@string/preferences_ask_from_number_summary" />
+
+	<CheckBoxPreference
+		android:key="do_not_check_certificate"
+		android:title="@string/preferences_do_not_check_certificate"
+		android:summary="@string/preferences_do_not_check_certificate_summary"
+		android:contentDescription="@string/preferences_do_not_check_certificate_description" />
+</PreferenceScreen>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="10dip">
+
+	<ImageView
+		android:id="@+id/network_icon"
+		android:src="@drawable/warning"
+   		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="10dip"
+		android:contentDescription="@string/image_warning" />
+
+	<TextView
+		android:id="@+id/network_error"
+		android:text="@string/network_error"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:textColor="#FFF"
+		android:paddingTop="5dip"
+		android:paddingBottom="30dip"
+		android:layout_toRightOf="@id/network_icon" />
+
+	<Button
+		android:text="@string/network_retry"
+		android:id="@+id/network_retry"
+		android:textColor="#000"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/network_error"
+		android:paddingLeft="40dip"
+		android:paddingRight="40dip" />
+
+	<Button
+		android:text="@string/network_exit"
+		android:id="@+id/network_exit"
+		android:textColor="#000"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/network_error"
+		android:paddingLeft="40dip"
+		android:paddingRight="40dip" />
+</RelativeLayout>

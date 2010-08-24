@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/layout_account_title"
+		android:orientation="horizontal"
+		android:gravity="top"
+		android:background="#444"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip">
+
+		<ImageView
+			android:src="@drawable/smsovh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/image_logo" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/sms_help"
+			android:autoLink="web"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:paddingTop="8dip"
+			android:paddingLeft="30dip"
+			android:textColor="#fff" />
+	</LinearLayout>
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dip">
+
+			<TextView
+				android:id="@+id/credit_left"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/sms_error"
+				android:visibility="gone"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#ff0000"
+				android:layout_below="@id/credit_left" />
+
+			<Spinner
+				android:id="@+id/from_number"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/from_hint"
+				android:layout_below="@id/sms_error" />
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/layout_recipients"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="10dip"
+				android:layout_below="@+id/from_number">
+
+				<AutoCompleteTextView
+					android:id="@+id/to"
+					android:maxLines="1"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/to_hint"
+					android:nextFocusDown="@+id/message"
+					android:nextFocusRight="@+id/message"
+					android:completionThreshold="1"
+					android:dropDownHeight="150dip"
+					android:dropDownVerticalOffset="3dip" />
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/add_to"
+				android:text="@string/add_to"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="20dip"
+				android:paddingRight="20dip"
+				android:layout_below="@id/layout_recipients"
+				android:layout_alignParentRight="true" />
+
+			<EditText
+				android:id="@+id/message"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/message_hint"
+				android:gravity="top"
+				android:lines="5"
+				android:layout_below="@id/add_to" />
+
+			<TextView
+				android:id="@+id/characters_sms_counter"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/message"
+				android:layout_alignParentLeft="true" />
+
+			<Button
+				android:id="@+id/send"
+				android:text="@string/send"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:paddingLeft="20dip"
+				android:paddingRight="20dip"
+				android:layout_below="@id/message"
+				android:layout_alignParentRight="true" />
+		</RelativeLayout>
+	</ScrollView>
+</LinearLayout>

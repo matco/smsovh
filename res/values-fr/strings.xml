@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- account -->
+	<string name="app_name">SMS OVH</string>
+	<string name="loading">Chargement&#8230;</string>
+
+	<!-- images -->
+	<string name="image_logo">Logo</string>
+	<string name="image_warning">Attention</string>
+	
+	<!-- network observer -->
+	<string name="network_error_title">Erreur réseau</string>
+	<string name="network_error">Un accès internet est requis pour se connecter aux serveurs OVH</string>
+	<string name="network_retry">Réessayer</string>
+	<string name="network_exit">Quitter</string>
+	
+	<string name="account_title">Lier l\'accompte OVH</string>
+	
+	<string name="wizard_credentials_help">Un compte OVH est requis pour utiliser cette application. Saisissez vos informations de connexion OVH pour commencer.</string>
+	<string name="wizard_login_hint">NIC-handle</string>
+	<string name="wizard_login_error">Le NIC-handle est requis</string>
+	
+	<string name="wizard_password_hint">Mot de passe</string>
+	<string name="wizard_password_error">Le mot de passe est requis</string>
+	
+	<string name="wizard_loading_accounts">Récupération des accomptes SMS</string>
+	
+	<string name="wizard_accounts_help">Sélectionnez l\'accompte SMS qui sera utilisé par l\'application.</string>
+	<string name="wizard_account_hint">Accompte SMS</string>
+	<string name="wizard_account_choose">Choisir un accompte</string>
+	<string name="wizard_accounts_error">Aucun accompte SMS n\'est disponible sur ce compte OVH. Un compte SMS est requis pour utiliser cette application.</string>
+	
+	<string name="wizard_loading_froms">Récupération des numéros de téléphone enregistrés</string>
+	
+	<string name="wizard_froms_help">Sélectionnez le numéro de téléphone qui sera utilisé par défaut pour envoyer le SMS. Ce numéro sera visible par vos correspondants. Ce paramètre peut être modifié ultérieurement sur l\'écran des préférences.</string>
+	<string name="wizard_from_hint">De</string>
+	<string name="wizard_from_choose">Choisir un expéditeur</string>
+	<string name="wizard_froms_error">Aucun numéro de téléphone n\'a été enregistré sur ce compte. Vous devez enregistrer un numéro de téléphone dans votre accompte SMS pour utiliser cette application.</string>
+	
+	<string name="wizard_previous">Precedent</string>
+	<string name="wizard_next">Suivant</string>
+	<string name="wizard_validate">Valider</string>
+	
+	<!-- sms -->
+	<string name="loading_ticket">Récupération d\'un ticket</string>
+	
+	<string name="phone_type_home">Domicile</string>
+	<string name="phone_type_mobile">Mobile</string>
+	<string name="phone_type_work">Travail</string>
+	
+	<string name="sms_help">Envoyer un SMS</string>
+	<string name="credit_left">%d SMS restants</string>
+	<string name="no_credit_left">Aucun SMS restant</string>
+	<string name="not_enough_credit_left">Nombre de SMS disponibles insuffisant</string>
+	<string name="sms_count">%1$d charactères (%2$d SMS)</string>
+	<string name="multiple_sms_count">%1$d charactères (%2$d x %3$d SMS)</string>
+
+	<string name="from_hint">Expéditeur</string>
+	<string name="to_hint">Envoyer à</string>
+	<string name="message_hint">Message</string>
+	<string name="add_to">Ajouter un destinataire supplémentaire</string>
+	<string name="send">Envoyer</string>
+
+	<string name="sms_fields_required">Le destinataire et le message sont requis</string>
+	<string name="international_phone_number_required">Un numéro de téléphone au format internationnal est requis</string>
+	
+	<string name="loading_sms">Envoi en cours</string>
+	<string name="sms_successfully_sent">SMS envoyé avec succès</string>
+	<string name="sms_successfully_saved"> et sauvegardé dans la base des SMS envoyés.</string>
+	
+	<string name="bug_saving_sms">Un problème est survenu lors de la sauvegarde du SMS. Il est recommandé de désactiver cette option dans les préférences.</string>
+	
+	<!-- preferences -->
+	<string name="preferences_save_sent">Sauver les SMS envoyés</string>
+	<string name="preferences_save_sent_summary">Sauver les SMS dans l\'application native</string>
+	<string name="preferences_save_sent_description">Attention, cette option peut poser des problèmes sur les téléphone avec un interface personalisée</string>
+	
+	<string name="preferences_default_calling_code">Indicatif téléphonique par défaut</string>
+	<string name="preferences_default_calling_code_summary">Indicatif sans le +</string>
+	
+	<string name="preferences_default_from_number">Numéro utilisé par défaut pour l\'envoi</string>
+	<string name="preferences_default_from_number_summary">Numéro par défaut visible par le destinatairer</string>
+	
+	<string name="preferences_ask_from_number">Demander le numéro d\'envoi</string>
+	<string name="preferences_ask_from_number_summary">Demander le numéro d\'envoi pour chaque SMS</string>
+	
+	<string name="preferences_do_not_check_certificate">Ne pas vérifier le certificat</string>
+	<string name="preferences_do_not_check_certificate_summary">Ne pas valider le certificat OVH avec les autorités présentes sur le téléphone</string>
+	<string name="preferences_do_not_check_certificate_description">Cochez cette option si vous rencontrez des problèmes avec l\'envoi des SMS</string>
+	
+	<!-- menu -->
+	<string name="quit">Quitter</string>
+	<string name="account">Configurer l\'accompte OVH</string>
+	<string name="preferences">Preferences</string>
+	<string name="about">A propos</string>
+	
+	<!-- about -->
+	<string name="about_promo">Envoyez des SMS grâce à OVH !</string>
+	<string name="about_description">Un accompte SMS chez OVH est requis pour utiliser cette application. Souscrivez à un pack de SMS sur le site internet d\'OVH http://www.ovh.com/fr/sms_et_fax/pack_sms.xml.</string>
+	<string name="about_ovh_description">Les SMS OVH peuvent être expédiés vers 644 opérateurs couvrant 166 pays dans le monde, sans coût supplémentaire.</string>
+	<string name="about_credit">SMS OVH par Matthieu Corageoud.</string>
+		
+	<!-- changelog -->
+	<string name="changelog">v1.6 : Correction d\'un bug avec la validité du ticket lors de la restauration de l\'application. Ajout d\'options supplémentaires.\nv1.5.2 : Correction de bugs. Nouveau bouton pour la suppression des destinataires.\nv1.5.1 : Amélioration de design. Correction de bugs.\nv1.5 : Détection de la présence d\'un accès Internet.\nv1.4 : Nouvelles icônes. Ajout de Google Analytics\nv1.3 : Ajout du multi-destinataire. Correction de bugs.\nv1.2 : Correction d\'un problème avec le certificate OVH.\nv1.1 : Ajout de la compatibilité avec 2.1, amélioration de l\'autocomplétion des contacts, du design et des traductions.</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="name.matco.android.smsovh"
+	android:versionCode="9"
+	android:versionName="1.6">
+	
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="10" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_SMS"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+
+	<uses-feature android:name="android.hardware.touchscreen" />
+
+	<supports-screens
+		android:smallScreens="true"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:anyDensity="true" />
+
+	<application android:icon="@drawable/smsovh" android:label="@string/app_name" android:allowClearUserData="true">
+		<activity
+			android:name=".SMS"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".Account"
+			android:label="@string/app_name" />
+		<activity
+			android:name=".Preferences"
+			android:label="@string/app_name" />
+		<activity
+			android:name=".About"
+			android:label="@string/app_name" />
+		<receiver android:name=".NetworkStateReceiver" android:enabled="true">
+			<!-- <intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter> -->
+		</receiver>
+	</application>
+</manifest>

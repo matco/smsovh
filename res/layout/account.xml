@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/layout_account_title"
+		android:orientation="horizontal"
+		android:gravity="top"
+		android:background="#444"
+		android:layout_alignParentTop="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip">
+
+		<ImageView
+			android:src="@drawable/smsovh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/image_logo" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/account_title"
+			android:autoLink="web"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:paddingTop="8dip"
+			android:paddingLeft="30dip"
+			android:textColor="#fff" />
+	</LinearLayout>
+
+	<ViewFlipper
+		android:id="@+id/process"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/layout_account_title">
+
+		<!-- account -->
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dip">
+
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/wizard_credentials_help"
+					android:paddingBottom="20dip" />
+
+				<TextView
+					android:id="@+id/account_error"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#ff0000"
+					android:paddingBottom="20dip"
+					android:visibility="gone" />
+
+				<EditText
+					android:id="@+id/login"
+					android:inputType="text"
+					android:singleLine="false"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/wizard_login_hint"
+					android:nextFocusDown="@+id/password"
+					android:nextFocusRight="@+id/password" />
+
+				<EditText
+					android:id="@+id/password"
+					android:inputType="textPassword"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/wizard_password_hint" />
+			</LinearLayout>
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal"
+				android:gravity="bottom"
+				android:background="#888"
+				android:layout_alignParentBottom="true"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip">
+
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:orientation="horizontal"
+						android:background="#888"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right">
+
+						<Button
+							android:text="@string/wizard_next"
+							android:id="@+id/validate_login"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/button_right"
+							android:paddingLeft="20dip"
+							android:paddingRight="35dip"
+							android:paddingTop="10dip"
+							android:paddingBottom="10dip"
+							android:textColor="#000" />
+					</LinearLayout>
+			</LinearLayout>
+		</RelativeLayout>
+
+		<!-- sms account -->
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dip">
+
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/wizard_accounts_help"
+					android:minHeight="70dip" />
+
+				<Spinner
+					android:id="@+id/account"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/wizard_account_hint"
+					android:prompt="@string/wizard_account_choose" />
+			</LinearLayout>
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal"
+				android:gravity="bottom"
+				android:background="#888"
+				android:layout_alignParentBottom="true"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip">
+
+				<Button
+					android:text="@string/wizard_previous"
+					android:id="@+id/back_to_login"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_left"
+					android:paddingLeft="35dip"
+					android:paddingRight="20dip"
+					android:paddingTop="10dip"
+					android:paddingBottom="10dip"
+					android:textColor="#000" />
+
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="horizontal"
+					android:background="#888"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right">
+
+					<Button
+						android:text="@string/wizard_next"
+						android:id="@+id/validate_account"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/button_right"
+						android:paddingLeft="20dip"
+						android:paddingRight="35dip"
+						android:paddingTop="10dip"
+						android:paddingBottom="10dip"
+						android:textColor="#000" />
+				</LinearLayout>
+			</LinearLayout>
+		</RelativeLayout>
+
+		<!-- from -->
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dip">
+
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/wizard_froms_help"
+					android:minHeight="70dip" />
+
+				<Spinner
+					android:id="@+id/from"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/wizard_from_hint"
+					android:prompt="@string/wizard_from_choose" />
+			</LinearLayout>
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal"
+				android:gravity="bottom"
+				android:background="#888"
+				android:layout_alignParentBottom="true"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip">
+
+				<Button
+					android:text="@string/wizard_previous"
+					android:id="@+id/back_to_account"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_left"
+					android:paddingLeft="35dip"
+					android:paddingRight="20dip"
+					android:paddingTop="10dip"
+					android:paddingBottom="10dip"
+					android:textColor="#000" />
+
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="horizontal"
+					android:background="#888"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right">
+
+					<Button
+						android:text="@string/wizard_validate"
+						android:id="@+id/validate_from"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/button_right"
+						android:paddingLeft="20dip"
+						android:paddingRight="35dip"
+						android:paddingTop="10dip"
+						android:paddingBottom="10dip"
+						android:textColor="#000" />
+				</LinearLayout>
+			</LinearLayout>
+		</RelativeLayout>
+
+	</ViewFlipper>
+
+</RelativeLayout>

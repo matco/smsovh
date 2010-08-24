@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- account -->
+	<string name="app_name">SMS OVH</string>
+	<string name="loading">Loading&#8230;</string>
+	
+	<!-- images -->
+	<string name="image_logo">Logo</string>
+	<string name="image_warning">Warning</string>
+	
+	<!-- network observer -->
+	<string name="network_error_title">Network error</string>
+	<string name="network_error">Internet access is required to access OVH servers</string>
+	<string name="network_retry">Retry</string>
+	<string name="network_exit">Exit</string>
+	
+	<string name="account_title">Link your OVH account</string>
+	
+	<string name="wizard_credentials_help">Your must own an OVH account to use this application. Enter your OVH credentials to begin.</string>
+	<string name="wizard_login_hint">NIC-handle</string>
+	<string name="wizard_login_error">NIC-handle is required</string>
+	
+	<string name="wizard_password_hint">Password</string>
+	<string name="wizard_password_error">Password is required</string>
+	
+	<string name="wizard_loading_accounts">Retrieving your SMS accounts</string>
+	
+	<string name="wizard_accounts_help">Select the SMS account that will be used by the application.</string>
+	<string name="wizard_account_hint">SMS Account</string>
+	<string name="wizard_account_choose">Choose an account</string>
+	<string name="wizard_accounts_error">No SMS account found on this OVH account. You must own an SMS account to use this application.</string>
+	
+	<string name="wizard_loading_froms">Retrieving your registered phone numbers</string>
+	
+	<string name="wizard_froms_help">Select the default phone number that will be used to send the SMS. This number will be seen by the receiver. This setting can be changed later on preferences screen.</string>
+	<string name="wizard_from_hint">From</string>
+	<string name="wizard_from_choose">Choose a sender</string>
+	<string name="wizard_froms_error">No phone number registered on this account. You must register a phone number in your SMS account to use this application.</string>
+	
+	<string name="wizard_previous">Back</string>
+	<string name="wizard_next">Next</string>
+	<string name="wizard_validate">Validate</string>
+		
+	<!-- sms -->
+	<string name="loading_ticket">Retrieving a token</string>
+	
+	<string name="phone_type_home">Home</string>
+	<string name="phone_type_mobile">Mobile</string>
+	<string name="phone_type_work">Work</string>
+	
+	<string name="sms_help">Send a SMS</string>
+	<string name="credit_left">%d SMS left</string>
+	<string name="no_credit_left">No SMS left</string>
+	<string name="not_enough_credit_left">Not enough SMS available</string>
+	<string name="sms_count">%1$d characters (%2$d SMS)</string>
+	<string name="multiple_sms_count">%1$d characters (%2$d x %3$d SMS)</string>
+	
+	<string name="from_hint">Sender</string>
+	<string name="to_hint">To</string>
+	<string name="message_hint">Content</string>
+	<string name="add_to">Add an other recipient</string>
+	<string name="send">Send</string>
+	
+	<string name="sms_fields_required">Please enter a recipient and a message</string>
+	<string name="international_phone_number_required">You must use the international format for the phone number.</string>
+	
+	<string name="loading_sms">Sending</string>
+	<string name="sms_successfully_sent">SMS successfully sent</string>
+	<string name="sms_successfully_saved"> and saved in sent message database.</string>
+	
+	<string name="bug_saving_sms">A problem has occurred while saving SMS. You should disable this option in preferences.</string>
+	
+	<!-- preferences -->
+	<string name="preferences_save_sent">Save sent SMS</string>
+	<string name="preferences_save_sent_summary">Save sent SMS in native SMS app</string>
+	<string name="preferences_save_sent_description">Warning, this may cause problems on some phone with specific UI</string>
+	
+	<string name="preferences_default_calling_code">Default calling code</string>
+	<string name="preferences_default_calling_code_summary">Calling code without +</string>
+	
+	<string name="preferences_default_from_number">Default sender number</string>
+	<string name="preferences_default_from_number_summary">Default number which will be seen by the receiver</string>
+	
+	<string name="preferences_ask_from_number">Ask sender number</string>
+	<string name="preferences_ask_from_number_summary">Ask sender number for each SMS</string>
+	
+	<string name="preferences_do_not_check_certificate">Do not check certificate</string>
+	<string name="preferences_do_not_check_certificate_summary">Do not check OVH certificate against phone authorities</string>
+	<string name="preferences_do_not_check_certificate_description">Checked this option if you encounter problem while sending SMS</string>
+	
+	<!-- menu -->
+	<string name="quit">Quit</string>
+	<string name="account">Set OVH account</string>
+	<string name="preferences">Preferences</string>
+	<string name="about">About</string>
+	
+	<!-- about -->
+	<string name="about_promo">Send SMS thanks to OVH!</string>
+	<string name="about_description">You need a SMS account from OVH to use this application. Subscribe for a SMS pack on OVH website http://www.ovh.co.uk/sms/sms_pack.xml.</string>
+	<string name="about_ovh_description">Single price for 166 countries around the world. OVH SMS can be sent to 644 operators covering 166 countries worldwide with no extra cost.</string>
+	<string name="about_credit">SMS OVH by Matthieu Corageoud.</string>
+	
+	<!-- changelog -->
+	<string name="changelog">v1.6: Avoid invalid ticket error after restoring the application. Add some options.\nv1.5.2: Bug fix. New button to remove recipients.\nv1.5.1: Design improved. Bug fix.\nv1.5: Internet access monitoring.\nv1.4: New icons. Add Google Analytics\nv1.3: Add multiple recipients. Some bugs fixed.\nv1.2: Fix untrusted certificate error.\nv1.1: Add 2.1 compatibility, improve contact autocomplete, design and localization.</string>
+</resources>
